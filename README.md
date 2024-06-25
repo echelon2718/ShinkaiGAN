@@ -10,7 +10,7 @@ The core of ShinkaiGAN is based on UNet with the Hybrid Perception Block archite
 ## Dataset
 
 The model is trained on a custom dataset that includes:
-- High-resolution anime scenes from various Makoto Shinkai movies.
+- High-resolution anime scenes from various Makoto Shinkai movies (currently is not public yet due to copyright, this will be updated soon).
 - Corresponding sketch images manually created or extracted using edge detection algorithms.
 
 ## Usage
