@@ -1,0 +1,9 @@
+torch==2.1.2+cu121
+tqdm==4.66.2
+numpy==1.26.4
+pandas==2.2.1
+torchvision==0.16.2+cu121
+matplotlib==3.8.3
+pillow==10.2.0
+ipython==8.22.2
+opendatasets==0.1.22
