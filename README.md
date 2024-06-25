@@ -47,7 +47,8 @@ To use ShinkaiGAN, follow these steps:
       --lambda_color 0.001 \
       --lambda_grayscale 0.01 \
       --lambda_tv 0.001 \
-      --lambda_fml 0.01
+      --lambda_fml 0.01 \
+      --device cuda
     ```
 
 
