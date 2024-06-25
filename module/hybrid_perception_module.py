@@ -1,3 +1,4 @@
+#### This module was adopted from Zheng, et. al. Hybrid Perception Block in ITTR (https://github.com/lucidrains/ITTR-pytorch?tab=readme-ov-file)
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
