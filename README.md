@@ -73,7 +73,7 @@ We welcome contributions to improve ShinkaiGAN. If you would like to contribute,
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the CC BY-NC-ND License. See the [LICENSE](LICENSE) file for details.
 
 ## References
 1. Zheng, W., Li, Q., Zhang, G., Wan, P., & Wang, Z. (2022). ITTR: Unpaired Image-to-Image Translation with Transformers. ArXiv (Cornell University). https://doi.org/10.48550/arxiv.2203.16015
