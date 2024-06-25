@@ -74,4 +74,13 @@ We welcome contributions to improve ShinkaiGAN. If you would like to contribute,
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+## References
+1. Zheng, W., Li, Q., Zhang, G., Wan, P., & Wang, Z. (2022). ITTR: Unpaired Image-to-Image Translation with Transformers. ArXiv (Cornell University). https://doi.org/10.48550/arxiv.2203.16015
+2. Ronneberger, O., Fischer, P., & Brox, T. (2015, May 18). U-Net: Convolutional Networks for Biomedical Image Segmentation. ArXiv.org. https://arxiv.org/abs/1505.04597
+3. Torbunov, D., Huang, Y., Tseng, H.-H., Yu, H., Huang, J., Yoo, S., Lin, M., Viren, B., & Ren, Y. (2023, September 22). UVCGAN v2: An Improved Cycle-Consistent GAN for Unpaired Image-to-Image Translation. ArXiv.org. https://doi.org/10.48550/arXiv.2303.16280
+4. Karras, T., Aila, T., Laine, S., & Lehtinen, J. (2017). Progressive Growing of GANs for Improved Quality, Stability, and Variation. ArXiv.org. https://arxiv.org/abs/1710.10196
+5. Karras, T., Laine, S., & Aila, T. (2018). A Style-Based Generator Architecture for Generative Adversarial Networks. ArXiv.org. https://arxiv.org/abs/1812.04948
+6. AnimeGANv3: A Novel Double-Tail Generative Adversarial Network for Fast Photo Animation. (n.d.). Tachibanayoshino.github.io. Retrieved June 25, 2024, from https://tachibanayoshino.github.io/AnimeGANv3/
+7. Liu, G., Chen, X., & Hu, Y. (2019). Anime Sketch Coloring with Swish-Gated Residual U-Net. Communications in Computer and Information Science, 190–204. https://doi.org/10.1007/978-981-13-6473-0_17
+
 ---
