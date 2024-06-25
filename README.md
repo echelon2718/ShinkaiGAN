@@ -1,4 +1,4 @@
-![image](https://github.com/echelon2718/ShinkaiGAN/assets/92637327/be259e0c-1f9c-42fc-9f28-ce3c22b2f6d0)# ShinkaiGAN
+# ShinkaiGAN
 
 ShinkaiGAN is a deep learning model designed to transform sketch images into beautiful anime scenes inspired by the style of Makoto Shinkai. This model utilizes a Hybrid Perception Block U-Net architecture to achieve high-quality image-to-image translation. In order to stabilize training process, we adopt the progressive training techniques as Karras, et. al. proposed to train ProGAN and StyleGANs.
 
@@ -57,8 +57,8 @@ Here are some examples of sketch-to-anime transformations using ShinkaiGAN:
 
 | Sketch | Anime Scene |
 |--------|--------------|
-| ![Sketch](examples/sketch1.png) | ![Anime Scene](examples/anime1.png) |
-| ![Sketch](examples/sketch2.png) | ![Anime Scene](examples/anime2.png) |
+| ![image](https://github.com/echelon2718/ShinkaiGAN/assets/92637327/34cabd2f-0a11-4c86-9326-7d8695aebf04) | ![image](https://github.com/echelon2718/ShinkaiGAN/assets/92637327/d3f0fcb1-f661-4f5e-9e12-98ea00d80edd) |
+| ![image](https://github.com/echelon2718/ShinkaiGAN/assets/92637327/29997a10-4179-46b8-8db5-557d65194c94) | ![image](https://github.com/echelon2718/ShinkaiGAN/assets/92637327/162506df-f66c-40d8-935b-a077169cbef5) |
 
 ## Contributing
 
