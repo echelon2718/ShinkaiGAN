@@ -1,50 +1,17 @@
-# ShinkaiGAN
+![image](https://github.com/echelon2718/ShinkaiGAN/assets/92637327/be259e0c-1f9c-42fc-9f28-ce3c22b2f6d0)# ShinkaiGAN
 
-ShinkaiGAN is a deep learning model designed to transform sketch images into beautiful anime scenes inspired by the style of Makoto Shinkai. This model utilizes a Hybrid Perception Block U-Net architecture to achieve high-quality image-to-image translation.
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Model Architecture](#model-architecture)
-- [Dataset](#dataset)
-- [Training](#training)
-- [Usage](#usage)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Introduction
-
-ShinkaiGAN is inspired by the stunning visual style of Makoto Shinkai, known for his work in anime films such as "Your Name" and "Weathering With You". The goal of this project is to create a model that can take a simple sketch and transform it into a fully colored anime scene that mimics Shinkai's unique artistic style.
+ShinkaiGAN is a deep learning model designed to transform sketch images into beautiful anime scenes inspired by the style of Makoto Shinkai. This model utilizes a Hybrid Perception Block U-Net architecture to achieve high-quality image-to-image translation. In order to stabilize training process, we adopt the progressive training techniques as Karras, et. al. proposed to train ProGAN and StyleGANs.
 
 ## Model Architecture
 
-The core of ShinkaiGAN is based on the Hybrid Perception Block U-Net architecture. This architecture combines the strengths of U-Net with additional perception blocks that help the model understand and generate detailed and aesthetically pleasing outputs.
-
-### Hybrid Perception Block U-Net
-
-- **U-Net Backbone:** Provides a robust encoder-decoder structure that captures multi-scale features.
-- **Perception Blocks:** Enhances the model's ability to perceive and generate fine details, which is crucial for replicating the intricate styles of Makoto Shinkai's artwork.
+The core of ShinkaiGAN is based on UNet with the Hybrid Perception Block architecture. 
+![image](https://github.com/echelon2718/ShinkaiGAN/assets/92637327/12049550-5936-48ed-a0be-a2cb616c11ef)
 
 ## Dataset
 
 The model is trained on a custom dataset that includes:
 - High-resolution anime scenes from various Makoto Shinkai movies.
 - Corresponding sketch images manually created or extracted using edge detection algorithms.
-
-## Training
-
-The training process involves the following steps:
-1. **Data Preprocessing:** Preparing the sketch and anime scene pairs for training.
-2. **Model Training:** Training the Hybrid Perception Block U-Net using the prepared dataset.
-3. **Fine-Tuning:** Fine-tuning the model to enhance output quality and style accuracy.
-
-### Training Parameters
-
-- **Batch Size:** 16
-- **Learning Rate:** 0.0002
-- **Epochs:** 100
-- **Loss Function:** Combination of L1 loss and perceptual loss.
 
 ## Usage
 
@@ -63,24 +30,26 @@ To use ShinkaiGAN, follow these steps:
     pip install -r requirements.txt
     ```
 
-3. **Run Inference:**
+3. **Run Training:**
 
-    ```python
-    from model import ShinkaiGAN
-    from utils import load_image, save_image
-
-    # Load your sketch image
-    sketch_image = load_image('path_to_your_sketch_image.png')
-
-    # Initialize the model
-    model = ShinkaiGAN()
-
-    # Generate the anime scene
-    anime_scene = model.transform(sketch_image)
-
-    # Save the result
-    save_image(anime_scene, 'output_path.png')
+    ```bash
+    python train.py \
+      --src_dir "/path/to/source/directory" \
+      --tgt_dir "/path/to/target/directory" \
+      --lvl1_epoch 10 \
+      --lvl2_epoch 20 \
+      --lvl3_epoch 30 \
+      --lvl4_epoch 40 \
+      --lambda_adv 1.0 \
+      --lambda_ct 0.1 \
+      --lambda_up 0.01 \
+      --lambda_style 0.01 \
+      --lambda_color 0.001 \
+      --lambda_grayscale 0.01 \
+      --lambda_tv 0.001 \
+      --lambda_fml 0.01
     ```
+
 
 ## Results
 
@@ -106,6 +75,3 @@ We welcome contributions to improve ShinkaiGAN. If you would like to contribute,
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
-
-Enjoy creating stunning anime scenes with ShinkaiGAN!
-
